@@ -10,51 +10,24 @@ namespace ita_chsharp_training
 {
     public class FizzBuzzMain
     {
-        private int _fizz = 3;
-        private int _buzz = 5;
-        public int Iterations = 100;
-        public int LastIteration;
-
-        //This is parameterless constructor
-        public FizzBuzzMain()
+        public string DoTheFizzBuzz(int valueToCheck) 
+          
         {
-           
+            string result = string.Empty;
 
-        }
-
-        //This is the overloaded constructor
-        public FizzBuzzMain(int fizz, int buzz, int iterations)
-        {
-            _fizz = fizz;
-            _buzz = buzz;
-            Iterations = iterations;
-        }
-
-        public string ExecuteFizzBuzz()
-        {
-            var returnValue = "";
-
-            for (var i = 0; i < Iterations; i++)
+            if(valueToCheck % 5 == 0)
+               
             {
-                if (i%_fizz == 0 && i%_buzz == 0)
-                {
-                    returnValue = String.Format("{0}{1}", returnValue, "FizzBuzz");
-                }
-                else if (i%_buzz == 0)
-                {
-                    returnValue = String.Format("{0}{1}", returnValue, "Buzz");
-                }
-                else if (i%_fizz == 0)
-                {
-                    returnValue = String.Format("{0}{1}", returnValue, "Buzz");
-                }
-                else
-                {
-                    returnValue = String.Format("{0}{1}", returnValue, i);                    
-                }
+                result = "Buzz"; 
             }
-
-            return returnValue;
+    
+            else
+            {
+                result = valueToCheck.ToString();
+            }
+           
+            return result;           
         }
+        
     }
 }
