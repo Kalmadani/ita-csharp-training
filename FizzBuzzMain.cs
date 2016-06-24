@@ -10,31 +10,35 @@ namespace ita_chsharp_training
 {
     public class FizzBuzzMain
     {
-        public string DoTheFizzBuzz(int valueToCheck) 
-          
+        public string DoTheFizzBuzz(int number)
         {
-            string result = string.Empty;
 
-            if(valueToCheck % 5 == 0){
-                result = "Buzz"; 
-            }
-             if (valueToCheck % 3 == 0) {
-                result = "Fizz";
-            }
-             if (valueToCheck % 15 == 0) {
-                result = "fizzBuzz";
-
+            if (number % 15 == 0)
+            {
+                return "fizzBuzz";
             }
 
-             if (valueToCheck % 5 != 0 && valueToCheck % 3 != 0 && valueToCheck % 15 != 0 )
-             {
-                 result = valueToCheck.ToString();
-                 
-             }
+            if(number % 3 == 0){
+                return "Fizz";
+            }
+
+            if (number % 5 == 0)
+            {
+                return "Buzz";
+            }
+
             
 
-            return result;           
+
+            //implement other rules here
+            
+            
+            
+            return number.ToString();
+
         }
+
+
         
     }
 }
