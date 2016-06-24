@@ -15,17 +15,24 @@ namespace ita_chsharp_training
         {
             string result = string.Empty;
 
-            if(valueToCheck % 5 == 0)
-               
-            {
+            if(valueToCheck % 5 == 0){
                 result = "Buzz"; 
             }
-    
-            else
-            {
-                result = valueToCheck.ToString();
+             if (valueToCheck % 3 == 0) {
+                result = "Fizz";
             }
-           
+             if (valueToCheck % 15 == 0) {
+                result = "fizzBuzz";
+
+            }
+
+             if (valueToCheck % 5 != 0 && valueToCheck % 3 != 0 && valueToCheck % 15 != 0 )
+             {
+                 result = valueToCheck.ToString();
+                 
+             }
+            
+
             return result;           
         }
         

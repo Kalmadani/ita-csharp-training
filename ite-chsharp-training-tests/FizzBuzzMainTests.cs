@@ -49,7 +49,14 @@ namespace ite_chsharp_training_tests
             Assert.AreEqual("Buzz",result);
 
     }
-    
+        [TestMethod]
+
+        public void When_the_number_is_fifteen()
+        {
+            FizzBuzzMain program = new FizzBuzzMain();
+            string result = program.DoTheFizzBuzz(15);
+            Assert.AreEqual("fizzBuzz", result);
+        }
     
     }
 }
