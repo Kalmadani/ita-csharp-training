@@ -10,6 +10,7 @@ namespace ite_chsharp_training_tests
         //rule number one: If the number is evenly divisble by three, reurn Fizz.
         //rule number two: If the number is evenly divisible by five, return Buzz.
         //rule number three: If the number is evenly divisble by three and five, return FizzBuzz.
+        //rule number four: If the number is evenly divisble by 30, return FizzToTheBuzz.
         //rule number four: If it does not match any of the other rules, just return number.
 
         [TestMethod]
@@ -57,6 +58,9 @@ namespace ite_chsharp_training_tests
             string result = program.DoTheFizzBuzz(15);
             Assert.AreEqual("fizzBuzz", result);
         }
+
+        
+   
     
     }
 }

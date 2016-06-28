@@ -12,33 +12,37 @@ namespace ita_chsharp_training
     {
         public string DoTheFizzBuzz(int number)
         {
+            
 
             if (number % 15 == 0)
             {
                 return "fizzBuzz";
             }
 
-            if(number % 3 == 0){
+            if(number % 3 == 0)
+            {
                 return "Fizz";
             }
-
+            
             if (number % 5 == 0)
             {
                 return "Buzz";
             }
-
             
 
-
+   
             //implement other rules here
             
             
-            
+            //this is the rule when it does not match other rules. return the number we got.
+
             return number.ToString();
 
+       
+        
+        
+        
         }
 
-
-        
     }
 }
